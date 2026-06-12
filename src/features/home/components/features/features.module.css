@@ -1,0 +1,32 @@
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.text {
+  color: #666;
+  line-height: 1.5;
+}
