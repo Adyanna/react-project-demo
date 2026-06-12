@@ -14,7 +14,7 @@ const srclogo = "../src/assets/logo.avif";
 
 
 function App() {
-  const token = localStorage.getItem("token")
+  const token = localStorage.getItem("token") || sessionStorage.getItem('token')
   console.log("TOKEN DESDE APP: ",token);
   const [isautenticate,setIsAutenticate]=useState(!!token);
 

@@ -8,12 +8,18 @@ const LoginPage = () => {
     const navegate = useNavigate();
     const [error,setError]=useState("");
 
-    const handleLogin = async (email: string, password: string) => {
+    const handleLogin = async (email: string, password: string,remember:boolean) => {
         setError("");
         try {
             const token = await loginUser(email, password);
-            localStorage.setItem("token", token);
-            console.log(token);
+            console.log('TOKEN SERVICIO:',remember,' - ', token,)
+            if(remember){
+                localStorage.setItem("token", token);
+            }
+            else
+            {
+                sessionStorage.setItem('token',token)
+            }
             navegate("/products");
         } catch (error: unknown) {
             setError('Usuario o contraseña incorrectos');

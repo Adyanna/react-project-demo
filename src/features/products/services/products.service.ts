@@ -31,7 +31,7 @@ export const getProductById = async (id: string): Promise<Product> => {
 }
 
 export const createProduct = async (producto: ProductoCreateDTO): Promise<Product> => {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('token')||sessionStorage.getItem('token');
     try {
         const response = await fetch(URL, {
             method: 'POST',
@@ -76,7 +76,7 @@ export const uploadImage = async (imageFile: File): Promise<string>=>{
 export async function updateProduct(idprd:string, dataprd:ProductUpdateDTO):Promise<Product>  {
     const url = `${URL}/${idprd}`;
     try {
-        const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token')||sessionStorage.getItem('token');
         if (!token) {
             throw new Error("Por favor, vuelva a iniciar session");
         }
@@ -103,7 +103,7 @@ export async function deleteProduct(idprd:string):Promise<null>{
     const url = `${URL}/${idprd}`;
     console.log("ELIMINAR PRODUCTO: ",idprd);
     try {
-        const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token')||sessionStorage.getItem('token');
         if (!token) {
             throw new Error("Por favor, vuelva a iniciar session");
         }

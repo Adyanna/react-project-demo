@@ -36,7 +36,7 @@ export const ProductDetail = ({ id }: Props) => {
                 const data = await getProductById(id);
                 console.log(data)
                 setProduct(data);
-                const token = localStorage.getItem('token');
+                const token = localStorage.getItem('token')||sessionStorage.getItem('token');
                 if (token) {
                     const user = await getMe(token);
                     setIsOwner(user.id === data.ownerId);

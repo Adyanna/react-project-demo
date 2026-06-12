@@ -1,6 +1,6 @@
 import type { Menu_Options } from '@core/types/core-types';
 import './navbar.css';
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 
 type Props = {
     readonly menuOptions: Menu_Options[];
@@ -17,7 +17,7 @@ export const Navbar: React.FC<Props> = ({ menuOptions, isAuthenticated, onLogOut
                     {
                         menuOptions.map((option, index) => (
                             <li key={index}>
-                                <a href={option.path}>{option.label}</a>
+                                <NavLink to={option.path}>{option.label}</NavLink>
                             </li>
                         ))
                     }
@@ -29,7 +29,7 @@ export const Navbar: React.FC<Props> = ({ menuOptions, isAuthenticated, onLogOut
                             <li>
                                 <Link to="/login">Login</Link>
                             </li>
-                            <li><a href="#">Registrarse</a></li>
+                            <li><Link to="/signin">Registrarse</Link></li>
                         </>
                     ) : (
                         <>

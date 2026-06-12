@@ -25,7 +25,7 @@ const ProductNew: React.FC = () => {
     }, []);
 
     const handleNewProduct = async (product: ProductoCreateDTO, imageFile: File) => {
-        const token = localStorage.getItem('token');
+        const token = localStorage.getItem('token')||sessionStorage.getItem('token');
         try {
             const imagePath = await uploadImage(imageFile);
             const user = await getMe(token!);
