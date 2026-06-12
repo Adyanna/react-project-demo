@@ -1,0 +1,268 @@
+{
+  "users": [
+    {
+      "username": "acutipa",
+      "name": "Milka",
+      "lastname": "Cutipa",
+      "email": "adac-mk@hotmail.com",
+      "password": "$2b$10$LWZvCiU5ddcVbtbJrKkcgOkGMPNslzjg8TcB1ZYMwDhIQQhKL.Zv.",
+      "id": 1
+    }
+  ],
+  "tags": [
+    "tecnologia",
+    "hogar",
+    "deportes",
+    "gaming",
+    "moda",
+    "belleza",
+    "salud",
+    "automotriz"
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "iPhone 15 Pro",
+      "description": "Smartphone de alta gama con cámara profesional y chip de última generación.",
+      "price": 1200,
+      "tags": [
+        "tecnologia"
+      ],
+      "image": "http://localhost:8000//file-1781101304191.png",
+      "isOnSale": true,
+      "stock": 5,
+      "category": "tecnologia",
+      "brand": "Apple",
+      "rating": 4.9,
+      "ownerId": 1
+    },
+    {
+      "id": "p2",
+      "name": "Samsung Galaxy S24",
+      "description": "Teléfono potente con excelente rendimiento y pantalla AMOLED.",
+      "price": 999,
+      "tags": [
+        "tecnologia"
+      ],
+      "image": "http://localhost:8000//file-1781101304191.png",
+      "isOnSale": false,
+      "stock": 8,
+      "category": "tecnologia",
+      "brand": "Samsung",
+      "rating": 4.7,
+      "ownerId": 1
+    },
+    {
+      "id": "p3",
+      "name": "PlayStation 5",
+      "description": "Consola de videojuegos de última generación.",
+      "price": 650,
+      "tags": [
+        "gaming"
+      ],
+      "image": "http://localhost:8000//file-1781101304191.png",
+      "isOnSale": true,
+      "stock": 6,
+      "category": "gaming",
+      "brand": "Sony",
+      "rating": 4.9,
+      "ownerId": 1
+    },
+    {
+      "id": "p4",
+      "name": "Xbox Series X",
+      "description": "Consola potente con gran catálogo de juegos.",
+      "price": 600,
+      "tags": [
+        "gaming"
+      ],
+      "image": "http://localhost:8000//file-1781101304191.png",
+      "isOnSale": false,
+      "stock": 4,
+      "category": "gaming",
+      "brand": "Microsoft",
+      "rating": 4.6,
+      "ownerId": 1
+    },
+    {
+      "id": "p5",
+      "name": "Bicicleta MTB Pro",
+      "description": "Bicicleta de montaña resistente para terrenos difíciles.",
+      "price": 350,
+      "tags": [
+        "deportes"
+      ],
+      "image": "http://localhost:8000//file-1781114636027.jpeg",
+      "isOnSale": true,
+      "stock": 10,
+      "category": "deportes",
+      "brand": "Trek",
+      "rating": 4.5,
+      "ownerId": 1
+    },
+    {
+      "id": "p6",
+      "name": "Balón de Fútbol Adidas",
+      "description": "Balón oficial para entrenamiento y partidos.",
+      "price": 35,
+      "tags": [
+        "deportes"
+      ],
+      "image": "http://localhost:8000//file-1781114636027.jpeg",
+      "isOnSale": false,
+      "stock": 20,
+      "category": "deportes",
+      "brand": "Adidas",
+      "rating": 4.3,
+      "ownerId": 1
+    },
+    {
+      "id": "p7",
+      "name": "Sofá Moderno",
+      "description": "Sofá cómodo y elegante para sala de estar.",
+      "price": 500,
+      "tags": [
+        "hogar"
+      ],
+      "image": "http://localhost:8000//file-1781116747066.png",
+      "isOnSale": true,
+      "stock": 3,
+      "category": "hogar",
+      "brand": "Ikea",
+      "rating": 4.4,
+      "ownerId": 1
+    },
+    {
+      "id": "p8",
+      "name": "Lámpara LED Inteligente",
+      "description": "Iluminación regulable con control desde app.",
+      "price": 45,
+      "tags": [
+        "hogar",
+        "tecnologia"
+      ],
+      "image": "http://localhost:8000//file-1781116747066.png",
+      "isOnSale": false,
+      "stock": 15,
+      "category": "hogar",
+      "brand": "Philips",
+      "rating": 4.2,
+      "ownerId": 1
+    },
+    {
+      "id": "p9",
+      "name": "Zapatillas Running Nike",
+      "description": "Zapatillas ligeras para correr largas distancias.",
+      "price": 120,
+      "tags": [
+        "deportes",
+        "moda"
+      ],
+      "image": "http://localhost:8000//file-1781116700305.png",
+      "isOnSale": true,
+      "stock": 12,
+      "category": "moda",
+      "brand": "Nike",
+      "rating": 4.8,
+      "ownerId": 1
+    },
+    {
+      "id": "p10",
+      "name": "Reloj Smart",
+      "description": "Monitor de actividad física y notificaciones.",
+      "price": 150,
+      "tags": [
+        "tecnologia"
+      ],
+      "image": "http://localhost:8000//file-1781116700305.png",
+      "isOnSale": true,
+      "stock": 9,
+      "category": "tecnologia",
+      "brand": "Huawei",
+      "rating": 4.6,
+      "ownerId": 1
+    },
+    {
+      "id": "p11",
+      "name": "Perfume Elegance",
+      "description": "Fragancia elegante para uso diario.",
+      "price": 80,
+      "tags": [
+        "belleza"
+      ],
+      "image": "http://localhost:8000//file-1781126124576.png",
+      "isOnSale": false,
+      "stock": 25,
+      "category": "belleza",
+      "brand": "Dior",
+      "rating": 4.7,
+      "ownerId": 1
+    },
+    {
+      "id": "p12",
+      "name": "Crema Facial",
+      "description": "Cuidado de la piel con hidratación profunda.",
+      "price": 25,
+      "tags": [
+        "belleza",
+        "salud"
+      ],
+      "image": "http://localhost:8000//file-1781126124576.png",
+      "isOnSale": true,
+      "stock": 30,
+      "category": "belleza",
+      "brand": "Nivea",
+      "rating": 4.5,
+      "ownerId": 1
+    },
+    {
+      "id": "p13",
+      "name": "Proteína Whey",
+      "description": "Suplemento para desarrollo muscular.",
+      "price": 60,
+      "tags": [
+        "salud"
+      ],
+      "image": "http://localhost:8000//file-1781286659135.jpg",
+      "isOnSale": false,
+      "stock": 18,
+      "category": "salud",
+      "brand": "Optimum Nutrition",
+      "rating": 4.8,
+      "ownerId": 1
+    },
+    {
+      "id": "p14",
+      "name": "Aceite Motor",
+      "description": "Lubricante de alto rendimiento para motores.",
+      "price": 40,
+      "tags": [
+        "automotriz"
+      ],
+      "image": "http://localhost:8000//file-1781286659135.jpg",
+      "isOnSale": true,
+      "stock": 22,
+      "category": "automotriz",
+      "brand": "Castrol",
+      "rating": 4.4,
+      "ownerId": 1,
+      "imagen": "http://localhost:8000//file-1781288406332.png"
+    },
+    {
+      "id": "p15",
+      "name": "Filtro de Aire",
+      "description": "Mejora el rendimiento del motor.",
+      "price": 18,
+      "tags": [
+        "automotriz"
+      ],
+      "image": "http://localhost:8000//file-1781286659135.jpg",
+      "isOnSale": false,
+      "stock": 40,
+      "category": "automotriz",
+      "brand": "Bosch",
+      "rating": 4.3,
+      "ownerId": 1
+    }
+  ]
+}
